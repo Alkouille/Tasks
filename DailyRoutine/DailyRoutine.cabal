@@ -1,0 +1,44 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 64167fdf555325aabca81320e987ef9ed6f8ea42e018526d87638e0c33bf38a1
+
+name:           DailyRoutine
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/DailyRoutine#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable DailyRoutine
+  main-is: Main.hs
+  other-modules:
+      Activities
+      CLParser
+      Data
+      Pretty
+      Paths_DailyRoutine
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , hashmap
+    , microlens-platform
+    , microlens-th
+    , parsec
+    , raw-strings-qq
+    , text
+    , time
+  default-language: Haskell2010
